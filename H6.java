@@ -1,4 +1,4 @@
-//jass õunapuu
+//Jass Õunapuu
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.PrintWriter;
@@ -13,7 +13,7 @@ public class H6 {
 		int k = 1;
 		
 		while(k == 1) {
-			System.out.print("Sisesta arv: ");
+			System.out.print("Sisestage arv: ");
 			String nr = scanner.nextLine();
 			
 			if(nr == "") {
@@ -29,12 +29,12 @@ public class H6 {
 		
 
 		try {
-			PrintWriter bw = new PrintWriter("numbrid.txt");
+			PrintWriter bw = new PrintWriter("arvud.txt");
 			bw.println("Kõik arvud: "+ list);
 			bw.println("Summa: "+sum);
-			bw.println("Keskmine: "+ keskmine);
+			bw.println("Arvude keskmine: "+ keskmine);
 			bw.close();
-			System.out.println("Fail loodud!");
+			System.out.println("Fail loodud");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
