@@ -1,4 +1,4 @@
-package KT;
+//Jass Õunapuu
 
 public class Har8_1 {
 
